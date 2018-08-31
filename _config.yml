@@ -3,21 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: ArchCST's Blog
+subtitle: 
+description: 待得秋来九月八，我花开时百花杀。\n冲天香阵透长安，满城尽带黄金甲。
 keywords:
-author: John Doe
+author: ArchCST
 language:
-timezone:
+  - zh-cn
+  - en
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
-permalink: :year/:month/:day/:title/
+url: http://crystl.cc/CSThexo
+root: /CSTHexo/
+permalink: :year:month/:title.html
 permalink_defaults:
-
+  lang: en
 # Directory
 source_dir: source
 public_dir: public
@@ -35,7 +37,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
