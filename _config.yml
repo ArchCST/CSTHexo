@@ -5,7 +5,7 @@
 # Site
 title: ArchCST's Blog
 subtitle: 
-description: 待得秋来九月八，我花开时百花杀。\n冲天香阵透长安，满城尽带黄金甲。
+description: 待得秋来九月八，<br>我花开时百花杀。<br>冲天香阵透长安，<br>满城尽带黄金甲。
 keywords:
 author: ArchCST
 language:
@@ -75,9 +75,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Disqus
+disqus_shortname: archcst
