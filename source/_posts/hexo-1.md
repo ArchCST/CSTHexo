@@ -1,6 +1,6 @@
 title: Hexo 静态博客搭建参考（一）：本地搭建  
-date: 2018-09-01  
-updated: 2018-09-04  
+date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-01 Sat&gt;</span></span>  
+updated: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-04 Tue&gt;</span></span>  
 comments: true  
 tags:  
 
@@ -169,6 +169,7 @@ avatar:
 # 分类、标签云、关于
 
 [Next 主题的 Wiki](https://github.com/iissnan/hexo-theme-next/wiki) 提供了如何添加子页面。  
+主题配置文件 `./source/_data/next.yml` 文件中 `menu:` 相关部分控制了各类文件的显示与否，`||` 后是图标名称，使用的是 [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) 4.70 版本。  
 
 ## 分类页面
 
@@ -189,7 +190,7 @@ comments: false
 ---
 ```
 
-这样就好了，也关闭了分类页面的评论功能。  
+这样就好了，同时关闭了分类页面的评论功能。  
 
 然后去掉 `./source/_data/next.yml` 文件中 `menu:` 相关部分的注释即可。  
 

@@ -1,6 +1,6 @@
 title: Hexo 静态博客搭建参考（二）：使用 org-mode 编写博文  
-date: 2018-09-02  
-updated: 2018-09-04  
+date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-02 Sun&gt;</span></span>  
+updated: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-04 Tue&gt;</span></span>  
 comments: true  
 tags:  
 
@@ -200,4 +200,4 @@ auto_excerpt:
 
 来实现以固定字数自动生成摘要，无法精确控制。  
 
-如果你有解决办法，或者更好的方式实现 Orgmode with Hexo，请留言交流，或者在 [我的 Github](https://github.com/ArchCST/spacemacs) 中提交 issue，万分感谢！  
+如果你有解决办法，或者更好的方式实现 Orgmode with Hexo，请在本文下面留言、[Telegram](http://t.me/archcst)，或者在 [我的 Github](https://github.com/ArchCST/spacemacs) 中提交 issue，万分感谢！  
