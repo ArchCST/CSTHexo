@@ -1,6 +1,5 @@
 ---
-title: tags
-date: 2018-09-02 13:42:34
+date: 2018-09-01
 type: "tags"
 comments: false
 ---

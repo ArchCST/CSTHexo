@@ -118,10 +118,10 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  categories: categories/ || th
-  tags: tags/ || tags
-  archives: archives/ || archive
-  about: about/ || user
+  categories: /categories/ || th
+  tags: /tags/ || tags
+  archives: /archives/ || archive
+  about: /about/ || user
   #schedule: schedule/ || calendar
   #sitemap: sitemap.xml || sitemap
   #commonweal: 404/ || heartbeat
@@ -268,8 +268,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 300
 
 # Post meta display settings
 post_meta:
