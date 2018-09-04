@@ -14,9 +14,14 @@ permalink:
 ---
 
 上一章已经使用 Github 开始管理整个博客目录，在每一次对 Hexo 进行配置之前记得先 commit，以免炸机。  
+
 用 emacs 时间长了对所有其他轻量级标记语言都熟视无睹，只有 [Org mode](https://orgmode.org/) 才是真爱。本章实现用 `.org` 文件写博客，如果你用 Markdown，请跳过这一章，Hexo 默认的语法就是 Markdown。  
+
+<!-- more -->
+
 [hexo-renderer-org](https://github.com/coldnew/hexo-renderer-org) 已经很久不更新，目前是无法使用的状态，经过一下午的 Debug 并没有找到好的修复方法。目前**唯一**的方法是将 `.org` 文件转换为 Hexo 支持的 GitHub Flavored Markdown (GFM) 格式。  
 本来以为半小时可以搞定，结果被 `metadata` 问题卡了一整天…查阅了无数文档翻遍了 Github 终于还是搞定了，就当练英语了。  
+
 用 emacs 的人还是太少了啊。  
 
 # 配置 ox-gfm
@@ -184,7 +189,7 @@ default *斜体* **粗体** `代码` `代码` ~~删除~~
 {% note warning %} warning {% endnote %}  
 {% note danger %} danger  {% endnote %}  
 
-## 遗留问题
+## 遗留问题（Solved）
 
 本文提供的代码可以在 [我的 Github](https://github.com/ArchCST/spacemacs) 上找到。  
 
@@ -201,3 +206,9 @@ auto_excerpt:
 来实现以固定字数自动生成摘要，无法精确控制。  
 
 如果你有解决办法，或者更好的方式实现 Orgmode with Hexo，请在本文下面留言、[Telegram](http://t.me/archcst)，或者在 [我的 Github](https://github.com/ArchCST/spacemacs) 中提交 issue，万分感谢！  
+
+### 解决方案
+
+可以通过添加 `#+HTML: <!-- more -->` 来解决，ox-gfm 会跳过所有的 `#+HTML:` 行。  
+
+同时，没有特殊字符的 `html 标签` 也是不会被转义的，基本上都可以直接使用，这就给以后自定义 <span class="s-red">CSS</span> 提供了土壤…  

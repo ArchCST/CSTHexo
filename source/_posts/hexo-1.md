@@ -26,6 +26,8 @@ sudo npm i -g npm
 sudo npm install -g hexo-cli
 ```
 
+<!-- more -->
+
 # 本地搭建
 
 我在 Mac 中 `~/git` 目录存放所有我用 `git` 管理的项目，Hexo 也打算用 git 管理起来，所以依旧存放在 `~/git` 目录中，命名为 `CSTHexo`。  
