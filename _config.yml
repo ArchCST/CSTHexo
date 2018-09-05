@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ArchCST's Blog
-subtitle: VENI VIDI VICI 
+title: CRYSTL
+subtitle: ArchCST's Blog
 description: 待得秋来九月八，<br>我花开时百花杀。<br>冲天香阵透长安，<br>满城尽带黄金甲。
-keywords:
+keywords: emacs,spacemacs,linux,运维,效率
 author: ArchCST
 language:
   - zh-CN
@@ -15,8 +15,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://crystl.cc/CSThexo
-root: /CSTHexo/
+url: http://crystl.cc
+root: /
 permalink: :year:month/:title.html
 permalink_defaults:
   lang: en

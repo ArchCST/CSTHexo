@@ -189,7 +189,11 @@ default *斜体* **粗体** `代码` `代码` ~~删除~~
 {% note warning %} warning {% endnote %}  
 {% note danger %} danger  {% endnote %}  
 
-## 遗留问题（Solved）
+主题配置文件中的 `# Note tag (bs-callout)` 段落可以对 Bootstrap Callout 进行样式上的配置。  
+
+[标签插件（Tag Plugins） | Hexo](https://hexo.io/zh-cn/docs/tag-plugins) 中有更多的内建标签用法  
+
+# 遗留问题（Solved）
 
 本文提供的代码可以在 [我的 Github](https://github.com/ArchCST/spacemacs) 上找到。  
 
@@ -207,8 +211,8 @@ auto_excerpt:
 
 如果你有解决办法，或者更好的方式实现 Orgmode with Hexo，请在本文下面留言、[Telegram](http://t.me/archcst)，或者在 [我的 Github](https://github.com/ArchCST/spacemacs) 中提交 issue，万分感谢！  
 
-### 解决方案
+## 解决方案
 
 可以通过添加 `#+HTML: <!-- more -->` 来解决，ox-gfm 会跳过所有的 `#+HTML:` 行。  
 
-同时，没有特殊字符的 `html 标签` 也是不会被转义的，基本上都可以直接使用，这就给以后自定义 <span class="s-red">CSS</span> 提供了土壤…  
+同时，没有特殊字符的 `html 标签` 也是不会被转义的，基本上都可以直接使用，这就给自定义 <span class="cst-red">CSS</span> 提供了土壤…  
