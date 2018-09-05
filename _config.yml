@@ -91,3 +91,12 @@ search:
   field: post
   format: html
   limit: 10000
+
+# hexo-heading-index
+# http://r12f.com/posts/adding-index-to-your-headings-with-hexo-heading-index/
+heading_index:
+  enable: true
+  index_styles: "{1} {1} {1} {1} {1} {1}"
+  connector: "."
+  global_prefix: ""
+  global_suffix: ". "
