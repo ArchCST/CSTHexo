@@ -1,0 +1,73 @@
+* MySQL 入门指南（二）
+** ALTER TABLE 对表进行修改
+
+重命名表：
+
+#+BEGIN_SRC mysql
+ALTER TABLE 原名 RENAME TO 新名;
+#+END_SRC
+
+添加字段：
+
+#+BEGIN_SRC mysql
+ALTER TABLE 表名 ADD 列名 数据类型 约束;
+#+END_SRC
+
+添加字段默认添加到最末。如果要加入到中间，使用 =AFTER 列名= 即可，如果插入到第一列，使用 =FIRST=
+
+删除字段：
+#+BEGIN_SRC mysql
+ALTER TABLE 表名字 DROP 列名字;
+#+END_SRC
+
+*** TODO 例：对 db_gamer 进行修改
+
+#+BEGIN_SRC mysql
+# 例1：将 rooms 表重命名为 homes
+ALTER TABLE rooms RENAME TO homes;
+
+# 例2：给 homes 添加 r_id 字段，并设定自增约束
+#+END_SRC
+
+
+** 修改列可以改列名：
+*** TODO 如何查询数据类型？
+ALTER TABLE 表名字 CHANGE 原列名 新列名 数据类型 约束;
+数据类型不可省略
+
+修改列属性：
+
+ALTER TABLE 表名字 MODIFY 列名字 新数据类型;
+
+** 修改值
+UPDATE 表名字 SET 列1=值1,列2=值2 WHERE 条件;
+
+** 删除行
+DELETE FROM 表名字 WHERE 条件;
+不带 WHERE 就把表删掉了
+
+** 索引、视图、导入导出、备份恢复
+*** 索引
+CREATE INDEX 索引名 ON 表名字 (列名);
+*** 视图：
+CREATE VIEW 视图名(列a,列b,列c) AS SELECT 列1,列2,列3 FROM 表名字;
+*** 导入导出：
+导入导出 不适用于 MySQL 5.7.6 版本之后，如果需要尝试，请自行安装版本。
+LOAD DATA INFILE '文件路径和文件名' INTO TABLE 表名字;
+
+SELECT 列1，列2 INTO OUTFILE '文件路径和文件名' FROM 表名字;
+
+LOAD DATA INFILE '文件路径' INTO TABLE pet LINES 
+    -> TERMINATED BY '\r\n';
+
+windows 下换行符号需要声明，Mac OS 下需要使用 =\r= 来分行。
+*** 备份：
+mysqldump -u root 数据库名>备份文件名;   #备份整个数据库
+
+mysqldump -u root 数据库名 表名字>备份文件名;  #备份整个表
+
+两种恢复备份的方法
+source /tmp/SQL6/MySQL-06.sql
+mysql -u root test < bak.sql
+
+取消命令：=\c=

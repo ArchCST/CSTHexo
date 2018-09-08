@@ -1,12 +1,67 @@
 // Custom styles.
+// GLOBAL CONFIG
 .header {
   background-image: url("http://pej67qdsn.bkt.clouddn.com/sitepics/banner.png");
+  background-repeat: no-repeat;
+}
+
+.header-inner {
+  padding: 50px 0 50px;
+}
+
+.custom-logo-image {
+  background: transparent;
+}
+
+.posts-expand {
+  padding-top: 5px;
+}
+
+a:hover {
+  border-bottom: 1px solid tomato;
+  transition-property: border-color;
+  transition-duration: 0.2s;
+}
+
+.posts-expand .post-title-link::before {
+  background-color: tomato;
 }
 
 .sidebar {
   background-image: url("http://pej67qdsn.bkt.clouddn.com/sitepics/sidebar.png");
 }
 
+.links-of-author a {
+  font-size: 18px;
+}
+
+// LOGO & SITE NAME
+.brand {
+  background-color: transparent;
+  border-bottom: none !important;
+}
+
+.custom-logo .site-title {
+  color: tomato;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+// MENU
+.menu .menu-item a {
+  color: #888;
+}
+.menu .menu-item a:hover {
+  color: #555;
+  border-bottom: 1px solid tomato;
+}
+
+.menu-item-active a {
+  color: #222 !important;
+  border-bottom-color: tomato !important;
+}
+
+// IN POSTS
 // the color was copied from https://oawan.me/
 .cst-red {
   border-radius: 4px;
@@ -16,33 +71,16 @@
   background: #f44336;
 }
 
-.cst-fa {
-  font-family: FontAwesome!important;
-  width: 1.3 em;
-}
-
 code {
   color: red
 }
 
+// highlight
 .highlight {
-  border-radius: 5px;
+//  border-radius: 5px;
   background-image: url("http://pej67qdsn.bkt.clouddn.com/sitepics/sidebar.png");
 }
 
 .highlight .code pre {
   background-image: url("http://pej67qdsn.bkt.clouddn.com/sitepics/sidebar.png");
-}
-
-.brand {
-  background-color: transparent;
-}
-
-.site-title {
-  font-size: 30px;
-}
-
-.site-subtitle {
-  color: tomato;
-  font-weight: bold;
 }
