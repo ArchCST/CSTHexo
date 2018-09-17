@@ -1,6 +1,6 @@
 title: Hexo 静态博客搭建参考（一）：本地搭建  
-date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-01 Sat&gt;</span></span>  
-updated: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-04 Tue&gt;</span></span>  
+date: 2018-09-01  
+updated: 2018-09-04  
 comments: true  
 tags:  
 

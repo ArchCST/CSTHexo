@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://crystl.cc
+url: http://archcst.me
 root: /
 permalink: :year:month/:title.html
 permalink_defaults:
@@ -96,7 +96,7 @@ search:
 # http://r12f.com/posts/adding-index-to-your-headings-with-hexo-heading-index/
 heading_index:
   enable: true
-  index_styles: "{1} {1} {1} {1} {1} {1}"
-  connector: "."
+  index_styles: "0x{0:X:2} 0x{0:X:2} 0x{0:X:2} 0x{0:X:2} 0x{0:X:2} 0x{0:X:2}"
+  connector: "x"
   global_prefix: ""
-  global_suffix: ". "
+  global_suffix: ": "

@@ -1,13 +1,18 @@
-* MySQL 入门指南（一）
-
-[[https://www.shiyanlou.com/courses/9][参考链接]]
-
-SQL = Structured Query Language 
-
+#+OPTIONS: toc:nil \n:t
+title: MySQL 入门指南
+date: 2018-09-16
+updated:
+comments: true
+tags:
+  - database
+categories: learn
+layout: post
+------
 MySQL 语句是不区分大小写的，但是为了区分保留字和变量名，一般把保留字大写，变量和数据小写。
+本文是以前学习 MySQL 时写的，非常基础，内容也比一般的教程更详细一些，基本上操作完本文内容，就对数据库有了一个直观的了解了。 
 
-** MySQL 的注释方法：
-
+#+HTML: <!-- more -->
+* MySQL 的注释方法：
 学习一门语言必须先学会注释，如果暂时看不懂下面内容，暂时掌握 =#= 注释即可。
 
 #+BEGIN_SRC mysql
@@ -22,9 +27,8 @@ mysql> SELECT 1+
 1;
 #+END_SRC
 
-** 安装和启动 MySQL 服务
-
-*** Ubuntu
+* 安装和启动 MySQL 服务
+** Ubuntu
 
 #+BEGIN_SRC shell
 # 安装 MySQL 服务器端和客户端
@@ -35,7 +39,7 @@ sudo apt-get install mysql-client
 sudo service mysql start
 #+END_SRC
 
-*** CentOS 7
+** CentOS 7
 
 #+BEGIN_SRC shell
 # 安装 MySQL 的分支 MariaDB
@@ -49,13 +53,10 @@ sudo systemctl enable mariadb   #设置开机启动
 #+END_SRC
 
 MariaDB 数据库管理系统是 MySQL 的一个分支，主要由开源社区在维护，采用 GPL 授权许可。
-
 开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。
-
 MariaDB 的目的是完全兼容 MySQL，包括 API 和命令行，使之能轻松成为 MySQL 的代替品。
 
-** MySQL 数据库的基本使用方法
-
+* MySQL 数据库的基本使用方法
 使用 root 登陆并查看本机数据库，注意此 root 并非 Linux 的 root，而是 MySQL 的 root，所以默认应该是没有密码的：
 
 #+BEGIN_SRC shell
@@ -99,7 +100,7 @@ mysql> DROP DATABASE 数据库名;
 mysql> DROP TABLE 表名;
 #+END_SRC
 
-** 新建数据库和数据表
+* 新建数据库和数据表
 
 以下代码块中省略 =mysql>= 提示符。
 
@@ -158,7 +159,7 @@ r_phone CHAR(13)
 +-------------------+
 #+END_SRC
 
-*** MySQL 常用的的数据类型
+** MySQL 常用的的数据类型
 
 | 数据类型 | 示例              | 说明         |
 |----------+-------------------+--------------|
@@ -179,7 +180,7 @@ r_phone CHAR(13)
 
 扩展阅读：[[https://blog.csdn.net/anxpp/article/details/51284106#comments][MySQL 中的数据类型介绍 - CSDN博客]]
 
-** 在数据表中插入数据
+* 在数据表中插入数据
 
 先查看 =users= 表，可以看到表内目前还没有数据：
 
@@ -219,7 +220,7 @@ INSERT INTO users(u_id,u_name,u_phone) VALUES(3,'Charlie','54323');
 +------+---------+---------+
 #+END_SRC
 
-** 创建 db_gamer 数据库
+* 创建 db_gamer 数据库
 
 在 MySQL 中，我们可以通过使用 =source= 来引入一个包含 MySQL 代码的文件来操作数据库。
 
@@ -335,7 +336,7 @@ SELECT * FROM games;
 
 下面的学习都基于这个数据库。
 
-** SQL 约束
+* SQL 约束
 
 使用 =cat -n ~/db_gamer.sql= 查看代码内容，=-n= 参数表示列印出行号，下面讲解为了方便会使用行号表述。
 
@@ -345,7 +346,7 @@ SELECT * FROM games;
 |-------------+-------------+---------+--------+----------+----------------|
 | 主键        | 外键        | 默认值  | 唯一   | 非空     | 自增           |
 
-*** 主键 (PRIMARY KEY)
+** 主键 (PRIMARY KEY)
 
 第 12 行定义了主键
 
@@ -353,7 +354,7 @@ SELECT * FROM games;
 
 主键不能有重复且不能为空。
 
-*** 外键 (FOREIGN KEY)
+** 外键 (FOREIGN KEY)
 
 第 24 行定义了外键
 
@@ -365,7 +366,7 @@ SELECT * FROM games;
 
 第 24 行意为 games 表中的 g_owner 字段必须参考 users 表中的 u_id 字段。
 
-*** 默认值 (DEFAULT)
+** 默认值 (DEFAULT)
 
 第 15 行定义了默认值
 
@@ -386,19 +387,19 @@ ariaDB [db_gamer]> SELECT * FROM users;
 +------+---------+-------+--------------+--------+
 #+END_SRC
 
-*** 唯一约束 (UNIQUE)
+** 唯一约束 (UNIQUE)
 
 第 13 行定义了唯一约束
 
 =UNIQUE= 约束的字段的值不能有重复。当 =INSERT= 数据重复时，会操作失败。
 
-*** 非空约束 (NOT NULL)
+** 非空约束 (NOT NULL)
 
 第 7 行定义了非空约束
 
 被非空约束的列，在插入值时必须非空。
 
-*** 自增 (AUTO_INCREMENT)
+** 自增 (AUTO_INCREMENT)
 
 第 12、20 行定义了自增
 
@@ -406,12 +407,12 @@ ariaDB [db_gamer]> SELECT * FROM users;
 
 第 40 ~ 44 行 =INSERT INTO games= 也是同理
 
-*** TODO 约束实验
+** TODO 约束实验
 
 对于几种约束做几个实验：
 
-** SELECT
-*** SELECT 基本语法
+* SELECT
+** SELECT 基本语法
 
 语法：
 
@@ -449,7 +450,7 @@ SELECT u_name,u_room FROM users WHERE u_room IN ('room1','room2');
 SELECT g_game FROM games WHERE g_owner=(SELECT u_id FROM users WHERE u_name='Delta');
 #+END_SRC
 
-*** LIKE + 通配符
+** LIKE + 通配符
 
 | 通配符 | 说明              |
 |--------+-------------------|
@@ -469,7 +470,7 @@ SELECT u_name,u_phone FROM users WHERE u_name LIKE 'Charlie%';
 SELECT u_name,u_phone FROM users WHERE u_name LIKE 'B____';
 #+END_SRC
 
-*** 排序 ORDER BY
+** 排序 ORDER BY
 
 | 排序方式 | 说明 |
 |----------+------|
@@ -486,7 +487,7 @@ SELECT u_name,u_age FROM users ORDER BY u_age;
 SELECT u_name,u_age FROM users ORDER BY u_age DESC;
 #+END_SRC
 
-*** SQL 聚合函数
+** SQL 聚合函数
 
 | 计数  | 求和 | 平均值 | 最大值 | 最小值 |
 |-------+------+--------+--------+--------|
@@ -516,7 +517,7 @@ SELECT MIN(u_name),MAX(u_name) FROM users;
 # MAX 和 MIN 可用于数字、字符串和日期时间数据类型
 #+END_SRC
 
-*** 分组：GROUP BY
+** 分组：GROUP BY
 
 根据一个字段分组
 
@@ -525,7 +526,7 @@ SELECT MIN(u_name),MAX(u_name) FROM users;
 SELECT u_room,count(u_name) FROM users GROUP BY u_room;
 #+END_SRC
 
-*** HAVING 和 WHERE 的区别
+** HAVING 和 WHERE 的区别
 
 问：Charlie 可以玩几种游戏机？
 
@@ -551,7 +552,7 @@ HAVING 是一个过滤声明，是在查询返回结果集以后对查询结果�
 
 参考资料：[[https://blog.csdn.net/Mark_LQ/article/details/45012955][Mysql中where与having的区别 - CSDN博客]]
 
-*** 连接：JOIN ON
+** 连接：JOIN ON
 
 问：每个人分别能玩哪些游戏机？
 
@@ -614,10 +615,3 @@ SELECT u_name AS user,r_room AS which_room,COUNT(g_game) AS how_many_games FROM 
 +---------+------------+----------------+
 #+END_SRC
 
-** TODO 习题
-
-Bravo 想玩 MHW，要到哪个房间去找谁（owner）拿游戏？
-
-#+BEGIN_SRC mysql
-SELECT g_game,r_room,u_name FROM games JOIN users ON games.g_owner = user.u_id JOIN rooms ON users.u_room
-#+END_SRC

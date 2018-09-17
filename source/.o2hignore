@@ -1,0 +1,4 @@
+This is the .o2hignore file which enables you to ignore files when using ArchCST-o2h/clean-none-exists function. Please do NOT touch this unless you know what you're doing.
+/Users/cst/git/CSTHexo/source/_drafts/test.md
+/Users/cst/git/CSTHexo/source/tags/index.md
+/Users/cst/git/CSTHexo/source/categories/index.md

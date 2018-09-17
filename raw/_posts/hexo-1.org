@@ -1,7 +1,7 @@
 #+OPTIONS: toc:nil \n:t
 title: Hexo 静态博客搭建参考（一）：本地搭建
-date: <2018-09-01 Tue>
-updated: <2018-09-04 Tue>
+date: 2018-09-01
+updated: 2018-09-04
 comments: true
 tags:
   - hexo

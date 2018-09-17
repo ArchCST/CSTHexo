@@ -1,16 +1,17 @@
-#+TITLE:       org-page 安装使用记录（一）
-#+AUTHOR:      ArchCST
-#+EMAIL:       cst@crystl.cc
-#+DATE:        2018-08-20 Mon
-#+URI:         /blog/%y/%m/%d/org-page-utilise
-#+KEYWORDS:    <TODO: insert your keywords here>
-#+TAGS:        learn
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: org-page 的安装使用
+#+OPTIONS: toc:nil \n:t
+title: org-page 安装使用记录
+date: 2018-09-16
+updated:
+comments: true
+tags:
+  - emacs
+categories: emacs
+layout: post
+------
 org-page 是 [[https://github.com/kelvinh/org-page][kelvinh]] 制作的一款以 org-mode 文件作为源文件的静态网站生成器，非常的轻量，具有高可定制性。
-
+我在制作 org-to-hexo 的时候研究很久 org-page 的代码，写得真是漂亮。所以虽然现在不用 org-page 了，依然放上来作为一个参考。
 本文基于 spacemacs 和 shell，用 shell 主要是观察 org-page 具体做了些什么操作。
+#+HTML: <!-- more -->
 * spacemacs 下的 org-page 安装和初始化
 
 在 private layer 中申明 org-page 的 layer：

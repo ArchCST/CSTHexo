@@ -1,5 +1,5 @@
 title: 通过 Alfred 从 MacOS 向 Sorted 3 中添加任务  
-date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-04 Tue&gt;</span></span>  
+date: 2018-09-04  
 updated:  
 comments: true  
 tags:  
@@ -12,7 +12,11 @@ permalink:
 
 ---
 
-Sorted 3 是目前最喜欢的效率软件，目前 Mac 版本还在制作中，暂时可以通过 Alfred 的 Workflow 实现从 Mac 上录入任务到 Sorted。这种方法需要 `Alfred powerpack` 的支持。  
+一直在电脑上用 orgmode，iOS 也下载了 beorg，但总是觉得有一些琐事并不需要使用 orgmode，而且有时候 beorg 的同步会出现一些奇奇怪怪的问题。  
+
+Omnifocus 用过很长一段时间，但既然是作为跟踪琐事来用，Omnifocus 也显得过于庞大了些。  
+
+Sorted 3 是 iOS 上目前最喜欢的效率软件，目前 Mac 版本还在制作中，暂时可以通过 Alfred 的 Workflow 实现从 Mac 上录入任务到 Sorted。这种方法需要 `Alfred powerpack` 的支持。  
 
 借助 [alfred-reminders](https://github.com/surrealroad/alfred-reminders/blob/master/README.md) 可以实现从 Alfred 录入任务到 Sorted 3，原理是通过 Alfred Workflow 向 Mac OS 的 `提醒事项` 添加任务到一个特定的列表，此列表自动通过 iCloud 同步到 iOS，在下一次打开 Sorted 3 的时候 Sorted 3 会自动读取这个列表，将这个任务最终添加到 Sorted 3 中，并同时将提醒事项中的这个任务标记为完成。听起来很复杂，实际上配置好了后所有步骤都是自动的。  
 

@@ -1,6 +1,6 @@
 title: Hexo 静态博客搭建参考（二）：使用 org-mode 编写博文  
-date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-02 Sun&gt;</span></span>  
-updated: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-04 Tue&gt;</span></span>  
+date: 2018-09-02  
+updated: 2018-09-04  
 comments: true  
 tags:  
 
@@ -14,15 +14,12 @@ permalink:
 ---
 
 上一章已经使用 Github 开始管理整个博客目录，在每一次对 Hexo 进行配置之前记得先 commit，以免炸机。  
-
 用 emacs 时间长了对所有其他轻量级标记语言都熟视无睹，只有 [Org mode](https://orgmode.org/) 才是真爱。本章实现用 `.org` 文件写博客，如果你用 Markdown，请跳过这一章，Hexo 默认的语法就是 Markdown。  
-
-<!-- more -->
-
 [hexo-renderer-org](https://github.com/coldnew/hexo-renderer-org) 已经很久不更新，目前是无法使用的状态，经过一下午的 Debug 并没有找到好的修复方法。目前**唯一**的方法是将 `.org` 文件转换为 Hexo 支持的 GitHub Flavored Markdown (GFM) 格式。  
 本来以为半小时可以搞定，结果被 `metadata` 问题卡了一整天…查阅了无数文档翻遍了 Github 终于还是搞定了，就当练英语了。  
-
 用 emacs 的人还是太少了啊。  
+
+<!-- more -->
 
 # 配置 ox-gfm
 

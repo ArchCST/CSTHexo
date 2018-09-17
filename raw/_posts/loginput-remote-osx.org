@@ -1,11 +1,11 @@
 #+OPTIONS: toc:nil \n:t
 title: 落格输入法使用 fcitx-remote-for-osx 实现 spacemacs 自动切换中英文
-date: <2018-09-05 Wed>
+date: 2018-09-05
 updated: 
 comments: true
 tags:
   - input
-  - spacemacs
+  - emacs
   - tools
 categories: efficiency
 layout: post
@@ -16,7 +16,7 @@ Mac 下使用 Vim 或 Spacemacs 的用户可能需要在退出 Insert Mode 进�
 使用搜狗输入法只需要查阅 [[https://github.com/CodeFalling/fcitx-remote-for-osx][fcitx-remote-for-osx 的官方 Github]] 照搬即可，这里只提一下官方还没有支持的落格输入法如何实现。
 
 本文已被落格官方收录
-
+#+HTML: <!-- more -->
 * 准备工作
 MAS 安装 XCode，启用 Command Line Tool
 

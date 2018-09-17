@@ -1,23 +1,22 @@
 #+OPTIONS: toc:nil \n:t
 title: Spacemacs Org-mode 快捷键中文说明书
-date: <2018-09-01 Sat>
-updated: <2018-09-07 Fri>
+date: 2018-09-01
+updated: 2018-09-16
 comments: true
 tags:
   - spacemacs
-categories: 
+categories: emacs
 layout: post
-permalink: 
 ------
 复制至 Spacemacs org-layer 的 README，翻译了快捷键部分
 
-从 emacs 迁移到 spacemacs，用 evil 模式也用了一段时间了，对于在 evil 模式下 org-mode 快捷键一直一知半解，所以把 README 拿出来全方位的过一遍，顺便看看还有哪些好用的功能没用上的
-一边试每一个快捷键一边翻译， 时间关系，不太常用的或者只靠试键搞不懂用处的暂时先不翻了，以后有空再继续，希望不要烂尾
-原文在这里（需要先安装 spacemacs）：
+从 emacs 迁移到 spacemacs，用 evil 模式也用了一段时间了，对于在 evil 模式下 org-mode 快捷键一直一知半解，所以把 README 拿出来全方位的过一遍，顺便看看还有哪些好用的功能没用上。
+一边试每一个快捷键一边翻译， 时间关系，不太常用的或者只靠试键搞不懂用处的暂时先不翻了，以后有空再继续，希望不要烂尾。
+spacemacs 里就有原文，在这里能找到（需要先安装 spacemacs）：
 #+BEGIN_SRC shell
 ~/.emacs.d/layers/+emacs/org/README.ORG
 #+END_SRC
-
+#+HTML: <!-- more -->
 * 按键绑定 Key bindings
 ** 开始使用 org-mode
 
