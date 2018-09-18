@@ -4,10 +4,8 @@ date: 2018-09-04
 updated: 
 comments: true
 tags:
-  - tools
-categories: efficiency
+  - learn
 layout: post
-permalink: 
 ------
 一直在电脑上用 orgmode，iOS 也下载了 beorg，但总是觉得有一些琐事并不需要使用 orgmode，而且有时候 beorg 的同步会出现一些奇奇怪怪的问题。
 

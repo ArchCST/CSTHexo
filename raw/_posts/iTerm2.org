@@ -4,8 +4,7 @@ date: 2018-09-16
 updated:
 comments: true
 tags:
-  - tools
-categories: OSX
+  - learn
 layout: post
 ------
 #+HTML: <img src="http://pej67qdsn.bkt.clouddn.com/postpics/iTerm2.png" alt="img" width="" />

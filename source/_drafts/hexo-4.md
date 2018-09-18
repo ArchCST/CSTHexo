@@ -4,7 +4,7 @@ updated:
 comments: true  
 tags:  
 
--   hexo
+-   learn
 
 categories: learn  
 layout: post  
@@ -25,3 +25,5 @@ git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
 ```yaml
 fancybox: true
 ```
+
+# Hexo Next 导航设置

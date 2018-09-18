@@ -4,11 +4,9 @@ date: 2018-09-02
 updated: 2018-09-04
 comments: true
 tags:
-  - hexo
+  - learn
   - emacs
-categories: learn
 layout: post
-permalink: 
 ------
 上一章已经使用 Github 开始管理整个博客目录，在每一次对 Hexo 进行配置之前记得先 commit，以免炸机。
 用 emacs 时间长了对所有其他轻量级标记语言都熟视无睹，只有 [[https://orgmode.org/][Org mode]] 才是真爱。本章实现用 =.org= 文件写博客，如果你用 Markdown，请跳过这一章，Hexo 默认的语法就是 Markdown。

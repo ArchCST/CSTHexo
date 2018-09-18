@@ -4,9 +4,8 @@ updated:
 comments: true  
 tags:  
 
--   tools
+-   learn
 
-categories: OSX  
 layout: post  
 
 ---

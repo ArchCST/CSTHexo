@@ -4,7 +4,7 @@ date: 2018-09-10
 updated:
 comments: true
 tags:
-  - hexo
+  - learn
 categories: learn
 layout: post
 ------
@@ -18,3 +18,4 @@ git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
 #+BEGIN_SRC yaml
 fancybox: true
 #+END_SRC
+* Hexo Next 导航设置

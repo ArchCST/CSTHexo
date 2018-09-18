@@ -4,9 +4,8 @@ updated:
 comments: true  
 tags:  
 
--   database
+-   learn
 
-categories: learn  
 layout: post  
 
 ---

@@ -4,9 +4,9 @@ updated: 2018-09-16
 comments: true  
 tags:  
 
--   spacemacs
+-   learn
+-   emacs
 
-categories: emacs  
 layout: post  
 
 ---

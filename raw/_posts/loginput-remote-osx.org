@@ -4,12 +4,9 @@ date: 2018-09-05
 updated: 
 comments: true
 tags:
-  - input
+  - learn
   - emacs
-  - tools
-categories: efficiency
 layout: post
-permalink: 
 ------
 Mac 下使用 Vim 或 Spacemacs 的用户可能需要在退出 Insert Mode 进入 Normal Mode 的时候自动切换回英文输入法，避免中文输入法截断快捷键的输入。 fcitx-remote-for-osx 插件可以实现这个功能。
 

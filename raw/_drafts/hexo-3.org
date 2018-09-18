@@ -1,11 +1,11 @@
 #+OPTIONS: toc:nil \n:t
 title: Hexo 静态博客搭建参考（三）：Hexo with spacemacs
-date: <2018-09-04 Tue>
+date: 2018-09-4
 updated: 
 comments: true
 tags:
-  - hexo
-  - spacemacs
+  - learn
+  - emacs
 categories: learn
 layout: post
 permalink: 

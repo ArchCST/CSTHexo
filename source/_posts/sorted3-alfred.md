@@ -4,11 +4,9 @@ updated:
 comments: true  
 tags:  
 
--   tools
+-   learn
 
-categories: efficiency  
 layout: post  
-permalink:  
 
 ---
 

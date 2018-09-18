@@ -5,7 +5,7 @@ title:
   tag: 标签
   schedule: 日程表
 menu:
-  home: 首页
+  home: 最新
   archives: 归档
   categories: 分类
   tags: 标签
@@ -14,6 +14,8 @@ menu:
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益 404
+  LEARN: 学海
+  ZEN: 心法
 sidebar:
   overview: 站点概览
   toc: 文章目录

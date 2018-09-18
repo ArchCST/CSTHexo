@@ -4,8 +4,8 @@ date: 2018-09-01
 updated: 2018-09-16
 comments: true
 tags:
-  - spacemacs
-categories: emacs
+  - learn
+  - emacs
 layout: post
 ------
 复制至 Spacemacs org-layer 的 README，翻译了快捷键部分

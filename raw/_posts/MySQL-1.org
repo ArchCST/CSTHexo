@@ -4,8 +4,7 @@ date: 2018-09-16
 updated:
 comments: true
 tags:
-  - database
-categories: learn
+  - learn
 layout: post
 ------
 MySQL 语句是不区分大小写的，但是为了区分保留字和变量名，一般把保留字大写，变量和数据小写。

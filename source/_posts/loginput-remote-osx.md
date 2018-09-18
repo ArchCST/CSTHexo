@@ -4,13 +4,10 @@ updated:
 comments: true  
 tags:  
 
--   input
+-   learn
 -   emacs
--   tools
 
-categories: efficiency  
 layout: post  
-permalink:  
 
 ---
 

@@ -1,11 +1,11 @@
 title: Hexo 静态博客搭建参考（三）：Hexo with spacemacs  
-date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-04 Tue&gt;</span></span>  
+date: 2018-09-4  
 updated:  
 comments: true  
 tags:  
 
--   hexo
--   spacemacs
+-   learn
+-   emacs
 
 categories: learn  
 layout: post  

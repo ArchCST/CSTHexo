@@ -4,9 +4,9 @@ updated:
 comments: true  
 tags:  
 
+-   learn
 -   emacs
 
-categories: emacs  
 layout: post  
 
 ---

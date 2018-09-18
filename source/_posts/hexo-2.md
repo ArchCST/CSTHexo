@@ -4,12 +4,10 @@ updated: 2018-09-04
 comments: true  
 tags:  
 
--   hexo
+-   learn
 -   emacs
 
-categories: learn  
 layout: post  
-permalink:  
 
 ---
 
