@@ -1,0 +1,13 @@
+#+OPTIONS: toc:nil \n:t
+title: Python 中的内存管理
+date: 2018-09-22
+updated:
+comments: true
+tags:
+  - learn
+layout: post
+------
+垃圾回收的步骤
+1. 对象引用计数，如果为变为0，标记为垃圾内存
+1. 标记垃圾内存
+2. 经常使用的内存放在不移动的地方。

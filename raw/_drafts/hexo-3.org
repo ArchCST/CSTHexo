@@ -22,29 +22,26 @@ permalink:
 
 * 快捷键设计
 
-| 快捷键        | 说明                                                | 函数名                          | 进度 |
-|---------------+-----------------------------------------------------+---------------------------------+------|
-| ~SPC d h E~   | 转换当前*文件*到指定目录                            | ArchCST-o2h/export-to-file      | DONE |
-| ~SPC d h e~   | 转换 raw *目录*到 source 的对应目录                 | ArchCST-o2h/export-all-files    | DONE |
-| ~SPC d h c~   | 查找不存在对应 org 文件的 md 文件，询问是否移到废篓 | ArchCST-o2h/clean-none-exists   | DONE |
-| ~SPC d h h~   | 一键转换、清理                                      | ArchCST-o2h/hyper               | DONE |
-| ~SPC d h n~   | 新建 org 草稿                                       | ArchCST-o2h/new-draft           | DONE |
-| ~SPC d h p~   | 发布草稿                                            | ArchCST-o2h/publish-draft       |      |
-| ~SPC d h i F~ | 插入 [[https:--hexo.io-zh-cn-docs-front-matter][Front-matter]]                                   | ArchCST-o2h/insert-front-matter | DONE |
-| ~SPC d h i m~ | 插入"阅读更多"标签                                  | ArchCST-o2h/insert-more         | DONE |
-| ~SPC d h i q~ | 插入 引用                                           | ArchCST-o2h/insert-quote        | DONE |
-| ~SPC d h i b~ | 插入 blockquote                                     | ArchCST-o2h/insert-blockquote   | DONE |
-| ~SPC d h i D~ | 插入 bs-callout default                             | ArchCST-o2h/insert-bc-default   | DONE |
-| ~SPC d h i P~ | 插入 bs-callout primary                             | ArchCST-o2h/insert-bc-primary   | DONE |
-| ~SPC d h i S~ | 插入 bs-callout success                             | ArchCST-o2h/insert-bc-success   | DONE |
-| ~SPC d h i I~ | 插入 bs-callout info                                | ArchCST-o2h/insert-bc-info      | DONE |
-| ~SPC d h i W~ | 插入 bs-callout warning                             | ArchCST-o2h/insert-bc-warning   | DONE |
-| ~SPC d h i -~ | 插入 bs-callout danger                              | ArchCST-o2h/insert-bc-danger    | DONE |
-| ~SPC d h i i~ | 插入 图片，可填写图片大小                           | ArchCST-o2h/insert-img-url      | DONE |
-| ~SPC d h i f~ | 插入 脚注，需要 Hexo 插件支持                       | ArchCST-o2h/insert-footnote     |      |
-| ~SPC d h i d~ | 插入日期，格式为 "年-月-日 小时:分钟"               | ArchCST-o2h/insert-datetime     |      |
-| ~SPC d h i t~ | 插入 font awesome todo-todo                         | ArchCST-o2h/insert-todo-todo    |      |
-| ~SPC d h i t~ | 插入 font awesome todo-done                         | ArchCST-o2h/insert-todo-done    |      |
+| 快捷键        | 说明                                                | 函数名                          | 进度  |
+|---------------+-----------------------------------------------------+---------------------------------+-------|
+| ~SPC d h e~   | 转换 raw *目录*到 source 的对应目录                 | ArchCST-o2h/export-all-files    | DONE  |
+| ~SPC d h c~   | 查找不存在对应 org 文件的 md 文件，询问是否移到废篓 | ArchCST-o2h/clean-none-exists   | DONE  |
+| ~SPC d h h~   | 一键转换、清理                                      | ArchCST-o2h/hyper               |       |
+| ~SPC d h n~   | 新建 org 草稿                                       | ArchCST-o2h/new-draft           | DONE  |
+| ~SPC d h p~   | 发布草稿                                            | ArchCST-o2h/publish-draft       | ISSUE |
+|---------------+-----------------------------------------------------+---------------------------------+-------|
+| ~SPC d h i F~ | 插入 [[https:--hexo.io-zh-cn-docs-front-matter][Front-matter]]                                   | ArchCST-o2h/insert-front-matter | DONE  |
+| ~SPC d h i m~ | 插入"阅读更多"标签                                  | ArchCST-o2h/insert-more         | DONE  |
+| ~SPC d h i q~ | 插入 引用                                           | ArchCST-o2h/insert-quote        | DONE  |
+| ~SPC d h i b~ | 插入 blockquote                                     | ArchCST-o2h/insert-blockquote   | DONE  |
+| ~SPC d h i D~ | 插入 bs-callout default                             | ArchCST-o2h/insert-bc-default   | DONE  |
+| ~SPC d h i P~ | 插入 bs-callout primary                             | ArchCST-o2h/insert-bc-primary   | DONE  |
+| ~SPC d h i S~ | 插入 bs-callout success                             | ArchCST-o2h/insert-bc-success   | DONE  |
+| ~SPC d h i I~ | 插入 bs-callout info                                | ArchCST-o2h/insert-bc-info      | DONE  |
+| ~SPC d h i W~ | 插入 bs-callout warning                             | ArchCST-o2h/insert-bc-warning   | DONE  |
+| ~SPC d h i -~ | 插入 bs-callout danger                              | ArchCST-o2h/insert-bc-danger    | DONE  |
+| ~SPC d h i i~ | 插入 图片，可填写图片大小                           | ArchCST-o2h/insert-img-url      | DONE  |
+| ~SPC d h i f~ | 插入 脚注，需要 Hexo 插件支持                       | ArchCST-o2h/insert-footnote     |       |
 
 插入的标签在 [[https://hexo.io/zh-cn/docs/tag-plugins#%E5%8F%8D%E5%BC%95%E5%8F%B7%E4%BB%A3%E7%A0%81%E5%9D%97][这里]] 能找到说明。
 
